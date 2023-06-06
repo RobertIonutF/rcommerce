@@ -18,6 +18,14 @@ const userSchema = new mongoose.Schema({
   apiKey: {
     type: String,
   },
+  cart: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Cart',
+  },
+  address: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Address',
+  },
   createdAt: {
     type: Date,
     default: Date.now,

@@ -9,13 +9,14 @@ const userRouter = require('./routes/userRouter');
 const productRouter = require('./routes/productRouter');
 const categoryRouter = require('./routes/categoryRouter');
 const addressRouter = require('./routes/addressRouter');
+const orderRouter = require('./routes/orderRouter');
 
 //Routes
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
 app.use('/api/categories', categoryRouter);
 app.use('/api/addresses', addressRouter);
-
+app.use('/api/orders', orderRouter);
 
 //Database connection
 mongoose.connect("mongodb://localhost:27017/rcommerce", {
