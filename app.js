@@ -19,7 +19,7 @@ app.use('/api/addresses', addressRouter);
 app.use('/api/orders', orderRouter);
 
 //Database connection
-mongoose.connect("mongodb://localhost:27017/rcommerce", {
+mongoose.connect("mongodb+srv://robertionutfundulea:Gamesolve123@gamesolveinnoapp.tuokknr.mongodb.net/", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
